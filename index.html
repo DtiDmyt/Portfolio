@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Deti Damayanti</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background bubbles -->
+    <div class="bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <!-- Navbar -->
+<nav id="navbar">
+    <div class="container">
+        <div class="logo">
+            <span>Portfolio.</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#certificates" class="nav-link">Certificate</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="container">
+            <div class="home-content">
+                <div class="home-text">
+                    <h1 class="hello">Hello, I'm <span class="highlight">Deti Damayanti</span></h1>
+                    <h2 class="profession">Website & Mobile Developer</h2>
+                    <p class="description">Creating user-friendly web and mobile applications that blend beauty with functionality!</p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn primary-btn">Contact Me</a>
+                    </div>
+                </div>
+                <div class="home-image">
+                    <div class="avatar-container">
+                        <img src="assets/profil.jpg" alt="Profile" class="avatar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/about.jpg" alt="About Me">
+                </div>
+                <div class="about-text">
+                    <p>Hello! I'm <span class="highlight">Deti Damayanti</span>, a web and mobile developer passionate about creating beautiful and functional websites and apps.</p>
+                    <p>I enjoy bringing ideas to life with code focused on creating visually appealing user-friendly experiences.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies or enjoying a cup of coffee and sweet treats at my favorite cafe.</p>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span class="info-label">Name:</span>
+                            <span class="info-value">Deti Damayanti</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span class="info-value">detidmyt23@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Location:</span>
+                            <span class="info-value">Bogor, Indonesia</span>
+                        </div>
+                    </div>
+                    <a href="https://docs.google.com/document/d/192nGN2ieJs4Tw3pJSXbmp0peavNfhlTb/edit?usp=sharing&ouid=105111936811064976223&rtpof=true&sd=true" class="btn primary-btn">View CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+<section id="skills" class="section">
+    <div class="container">
+        <h2 class="section-title" style="font-size: 2.5rem; margin-bottom: 2rem;">My Skills</h2>
+        <div class="skills-content">
+            <div class="skill-category">
+                <div class="skills-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <!-- Web Development -->
+                    <div class="skill-item" data-skill="Web Development" style="background: #f8f9fa; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                        <div class="skill-icon" style="font-size: 3rem; color: #e34c26; margin-bottom: 1rem;">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Web Development</h4>
+                        <div class="skill-bar" style="height: 20px; background: #e9ecef; border-radius: 10px; overflow: hidden;">
+                            <div class="skill-progress" style="height: 100%; background: #e34c26; width: 50%; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; color: white; font-weight: bold;">50%</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Mobile Apps -->
+                    <div class="skill-item" data-skill="Mobile Apps" style="background: #f8f9fa; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                        <div class="skill-icon" style="font-size: 3rem; color: #61dbfb; margin-bottom: 1rem;">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Mobile Apps</h4>
+                        <div class="skill-bar" style="height: 20px; background: #e9ecef; border-radius: 10px; overflow: hidden;">
+                            <div class="skill-progress" style="height: 100%; background: #61dbfb; width: 70%; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; color: white; font-weight: bold;">70%</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Analyst -->
+                    <div class="skill-item" data-skill="Analyst" style="background: #f8f9fa; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                        <div class="skill-icon" style="font-size: 3rem; color: #764abc; margin-bottom: 1rem;">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Analyst</h4>
+                        <div class="skill-bar" style="height: 20px; background: #e9ecef; border-radius: 10px; overflow: hidden;">
+                            <div class="skill-progress" style="height: 100%; background: #764abc; width: 60%; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; color: white; font-weight: bold;">60%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Projects Section -->
+<section id="projects" class="section">
+    <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" data-category="web">
+                <div class="project-img">
+                    <img src="assets/project1.png" alt="Sea World Website">
+                </div>
+                <div class="project-info">
+                    <h3>Sea World Website</h3>
+                    <p>An informative platform dedicated to promoting ocean awareness and marine biodiversity.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://codepen.io/Deti-Damayanti/pen/jOJePgP" class="btn small-btn"><i class="fas fa-eye"></i> Demo & Code</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card" data-category="app">
+                <div class="project-img">
+                    <img src="assets/project2.png" alt="GladdysCase Website">
+                </div>
+                <div class="project-info">
+                    <h3>GladdysCase Website</h3>
+                    <p>A fully responsive product showcase website for stylish and protective phone cases.</p>
+                    <div class="project-tags">
+                        <span>Bootstrap</span>
+                        <span>PHP</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://gladdys-case.vercel.app/" class="btn small-btn"><i class="fas fa-eye"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card" data-category="design">
+                <div class="project-img">
+                    <img src="assets/project3.png" alt="Libranic App">
+                </div>
+                <div class="project-info">
+                    <h3>Libranic App</h3>
+                    <p>A digital library app designed to access book collections and manage loans efficiently.</p>
+                    <div class="project-tags">
+                        <span>Dart</span>
+                        <span>Flutter</span>
+                        <span>Firebase</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://drive.google.com/file/d/1gmWFs6s_OE-L4x0lB4n6vLZrmaaiiR9V/view?usp=sharing" class="btn small-btn"><i class="fas fa-eye"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="design">
+                <div class="project-img">
+                    <img src="assets/project4.jpg" alt="SiKasir App">
+                </div>
+                <div class="project-info">
+                    <h3>SiKasir App</h3>
+                    <p>A digital cashier app designed to streamline sales, inventory management, and payment processing efficiently.</p>
+                    <div class="project-tags">
+                        <span>Dart</span>
+                        <span>Flutter</span>
+                        <span>Firebase</span>
+                        <span>Cloudinary</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://drive.google.com/file/d/1FcmPkvzsgKPcBUe3QqUT8n_RTZXBxiDi/view?usp=sharing" class="btn small-btn"><i class="fas fa-eye"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Certificates Section -->
+<section id="certificates" class="section">
+    <div class="container">
+        <h2 class="section-title">My Certificates</h2>
+        <div class="certificates-slider">
+            <div class="certificates-track">
+                <div class="certificate-card">
+                    <div class="certificate-img">
+                        <img src="assets/sertifikat1.jpg" alt="Web Development Certificate">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Belajar Dasar Pemrograman Web</h3>
+                        <p class="certificate-issuer">Dicoding</p>
+                        <p class="certificate-date">February 2024 - 2027</p>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-img">
+                        <img src="assets/sertifikat2.jpg" alt="Dart Certificate">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Memulai Pemrograman dengan Dart</h3>
+                        <p class="certificate-issuer">Dicoding</p>
+                        <p class="certificate-date">November 2024 - 2027</p>
+                    </div>
+                </div>
+                
+                <div class="certificate-card">
+                    <div class="certificate-img">
+                        <img src="assets/sertifikat3.jpg" alt="Flutter Certificate">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Belajar Membuat Aplikasi Flutter untuk Pemula</h3>
+                        <p class="certificate-issuer">Dicoding</p>
+                        <p class="certificate-date">November 2024 - 2027</p>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-img">
+                        <img src="assets/sertifikat4.jpg" alt="SOLID Certificate">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Belajar Prinsip Pemrograman SOLID</h3>
+                        <p class="certificate-issuer">Dicoding</p>
+                        <p class="certificate-date">November 2024 - 2027</p>
+                    </div>
+                </div>
+                
+                <div class="certificate-card">
+                    <div class="certificate-img">
+                        <img src="assets/sertifikat5.jpg" alt="DevCoach169 Certificate">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Dicoding DevCoach 169 | Jelajahi Media Gambar dengan Image Picker</h3>
+                        <p class="certificate-issuer">Dicoding</p>
+                        <p class="certificate-date">September 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn prev-btn">&lt;</button>
+                <div class="slider-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>                    
+                    <span class="dot" data-index="4"></span>
+                </div>
+                <button class="slider-btn next-btn">&gt;</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+<section id="contact" class="section">
+    <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Location</h3>
+                    <p>Bogor, Indonesia</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>detidmyt23@gmail.com</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>+62 8953 5130 0905</p>
+                </div>
+            </div>
+            
+            <div class="contact-visual">
+                <div class="contact-cta">
+                    <h3>Let's Connect!</h3>
+                    <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.</p>
+                    <div class="availability-indicator">
+                        <span class="status-dot online"></span>
+                        <span class="status-text">Available for open discussion</span>
+                    </div>
+                </div>
+                
+                <div class="schedule-container">
+                    <h3>My Active Hours</h3>
+                    <div class="schedule-list">
+                        <div class="schedule-item">
+                            <span class="day">Monday - Friday</span>
+                            <span class="hours">9:00 AM - 3:00 PM</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="day">Saturday</span>
+                            <span class="hours">10:00 AM - 3:00 PM</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="day">Sunday</span>
+                            <span class="hours">Closed</span>
+                        </div>
+                    </div>
+                    <div class="timezone">
+                        <i class="fas fa-globe-americas"></i>
+                        <span>All times in GMT+7</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="social-links-container">
+            <h3>Find Me On</h3>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/deti-damayanti-716b26364/" class="social-link" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/DtiDmyt" class="social-link" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://wa.me/62895351300905" class="social-link" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.instagram.com/dti.dmyt/" class="social-link" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span>Deti Damayanti</span>
+                    <p>Web & Mobile Development</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#certificates">Certificates</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Follow me to see the latest info</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Deti Damayanti. All Rights Reserved.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/deti-damayanti-716b26364/" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/DtiDmyt" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://wa.me/62895351300905" class="social-link" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/dti.dmyt/" class="social-link" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
