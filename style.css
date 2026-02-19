@@ -416,6 +416,44 @@ img {
 
 /* ======= PROJECTS SECTION ======= */
 
+/* Filter tabs */
+.project-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    padding: 0.45rem 1.4rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    background: transparent;
+    color: var(--primary-color);
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: var(--primary-color);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(255, 182, 193, 0.5);
+}
+
+/* No-result message */
+.no-projects-msg {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 0.95rem;
+    margin: 1rem 0 2rem;
+}
+
 /* Grid 2 kolom untuk desktop, full width */
 .projects-grid {
     display: grid;
@@ -432,12 +470,29 @@ img {
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     background-color: white;
-    transition: var(--transition);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.35s ease;
+    animation: cardFadeIn 0.4s ease both;
+}
+
+@keyframes cardFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(18px) scale(0.97);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }
 
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Hide class — used by filter & show-more */
+.project-card.hidden {
+    display: none;
 }
 
 /* Gambar di atas, tinggi tetap */
@@ -504,6 +559,31 @@ img {
     gap: 1rem;
     margin-top: auto;
     padding-top: 0.5rem;
+}
+
+/* Show More button wrapper */
+.projects-more-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.2rem;
+}
+
+.show-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.65rem 2rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.show-more-btn i {
+    transition: transform 0.3s ease;
+}
+
+.show-more-btn.expanded i {
+    transform: rotate(180deg);
 }
 
 /* Responsive: 1 kolom di tablet & mobile */
@@ -1075,4 +1155,71 @@ img {
         z-index: -1;
     }
     .nav-links.active { transform: translateY(0); }
+}
+
+/* ======= SCROLL REVEAL ======= */
+.reveal,
+.reveal-left,
+.reveal-right {
+    opacity: 0;
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal          { transform: translateY(35px); }
+.reveal-left     { transform: translateX(-45px); }
+.reveal-right    { transform: translateX(45px); }
+
+.reveal.visible,
+.reveal-left.visible,
+.reveal-right.visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Stagger delay helpers */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+.delay-5 { transition-delay: 0.5s; }
+.delay-6 { transition-delay: 0.55s; }
+
+/* Section title underline grows when revealed */
+.section-title::after {
+    width: 0;
+    transition: width 0.6s ease 0.25s;
+}
+.section-title.visible::after {
+    width: 60px;
+}
+
+/* ======= HERO HIGHLIGHT SHIMMER ======= */
+@keyframes shimmer {
+    0%   { background-position: 0% center; }
+    100% { background-position: 200% center; }
+}
+
+.hello .highlight {
+    background: linear-gradient(90deg, #FFB6C1 0%, #ff6b8a 45%, #FFB6C1 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 4s linear infinite;
+}
+
+/* ======= NAV LINK HOVER UNDERLINE ======= */
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+.nav-link:hover::before {
+    width: 100%;
 }
